@@ -12,6 +12,11 @@ function HookMouse(){
     useEffect(() => {
         console.log("useEffect call")
         window.addEventListener('mousemove', mouseposition)
+
+        return () => {
+            console.log("component unmounted")
+            window.removeEventListener('mousemove', mouseposition)
+        }
     },[])
 
     return (<div>X - {x} Y - {y}</div>)

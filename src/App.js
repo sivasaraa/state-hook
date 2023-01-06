@@ -9,6 +9,7 @@ import HookCounterOne from './Component/HookCounterOne';
 import ClassCounterOne from './Component/ClassCounterOne';
 import ClassMouse from './Component/ClassMouse';
 import HookMouse from './Component/HookMouse';
+import MouseContainer from './Component/MouseContainer';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
       {/* <HookCounterOne /> */}
       {/* <ClassCounterOne /> */}
       {/* <ClassMouse /> */}
-      <HookMouse />
+      {/* <HookMouse /> */}
+      <MouseContainer />
     </div>
   );
 }
