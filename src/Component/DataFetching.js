@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
 function DataFetching(){
     const[posts, setPosts] = useState([])
 
-    useState(() => {
+    useEffect(() => {
         console.log("updating")
         axios.get('https://jsonplaceholder.typicode.com/posts').then(res => {
             setPosts(res.data);
