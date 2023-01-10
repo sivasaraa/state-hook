@@ -14,6 +14,7 @@ import ClassInterval from './Component/ClassInterval';
 import HookInterval from './Component/HookInterval';
 import DataFetching from './Component/DataFetching';
 import DataFetchingOne from './Component/DataFetchingOne';
+import ComponentA from './Component/ComponentA';
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
       {/* <ClassInterval /> */}
       {/* <HookInterval /> */}
       {/* <DataFetching /> */}
-      <DataFetchingOne />
+      {/* <DataFetchingOne /> */}
+      <ComponentA />
     </div>
   );
 }
