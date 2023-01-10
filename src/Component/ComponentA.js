@@ -3,12 +3,16 @@ import ComponentB from './ComponentB'
 
 export const userContext = React.createContext();
 
+export const channelContext = React.createContext();
+
 function ComponentA(){
 
     return (
         <div>
             <userContext.Provider value={"Daniel"}>
-                <ComponentB />
+                <channelContext.Provider value={"NewZealand"}>
+                    <ComponentB />
+                </channelContext.Provider>
             </userContext.Provider>
         </div>
     )

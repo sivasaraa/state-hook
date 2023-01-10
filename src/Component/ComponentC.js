@@ -1,5 +1,5 @@
 import React from 'react'
-import { userContext } from './ComponentA'
+import { userContext, channelContext } from './ComponentA'
 
 function ComponentC(){
     return (
@@ -7,7 +7,13 @@ function ComponentC(){
             <userContext.Consumer>
                 {
                     user => {
-                        return (<div>User Loggedin is {user}</div>)
+                        return <channelContext.Consumer>
+                            {
+                                channel => {
+                                    return (<div>User Loggedin is {user} and from {channel}</div>)
+                                }
+                            }
+                        </channelContext.Consumer>
                     }
                 }
             </userContext.Consumer>
